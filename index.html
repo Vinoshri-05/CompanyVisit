@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CompanyVisit | Explore Companies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>Company<span>Visit.</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#companies">Companies</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="#companies" class="nav-btn">Explore Now</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <p class="tag">DISCOVER • EXPLORE • CONNECT</p>
+
+        <h1>Explore Companies<br>
+            <span>Before You Visit.</span>
+        </h1>
+
+        <p>
+            Find company information, office locations,
+            contact details and everything you need
+            before planning your visit.
+        </p>
+
+        <a href="#companies" class="primary-btn">
+            Explore Companies →
+        </a>
+    </div>
+
+</section>
+
+<section class="companies-section" id="companies">
+
+    <div class="section-heading">
+        <p>COMPANY DIRECTORY</p>
+        <h2>Explore Companies</h2>
+        <span>Discover companies and their office details.</span>
+    </div>
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search company name..."
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="IT">IT Companies</option>
+            <option value="Startup">Startups</option>
+            <option value="Education">Education</option>
+        </select>
+
+    </div>
+
+    <div class="company-grid" id="companyGrid"></div>
+
+</section>
+
+<section class="about-section" id="about">
+
+    <h2>Plan Your Visit Smarter.</h2>
+
+    <p>
+        CompanyVisit makes it easier to discover companies,
+        explore their locations and access essential
+        company information in one place.
+    </p>
+
+</section>
+
+<footer>
+    <h3>CompanyVisit.</h3>
+    <p>Explore better. Visit smarter.</p>
+    <p>© 2026 CompanyVisit. All rights reserved.</p>
+</footer>
+
+<!-- Company Details Popup -->
+
+<div class="modal" id="companyModal">
+
+    <div class="modal-content">
+
+        <button class="close-btn" onclick="closeModal()">×</button>
+
+        <div id="modalDetails"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
